@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto das Nuvens ☁️✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="card-aeroporto">
+        <header class="cabecalho">
+            <span class="icone-nuvem">☁️✈️☁️</span>
+            <h1>Aeroporto das Nuvens</h1>
+            <p class="subtitulo">Painel de Controle e Registro de Voos</p>
+        </header>
+
+        <form id="formVoo" onsubmit="event.preventDefault();" class="formulario">
+            <div class="campo">
+                <label for="codigoVoo">Código do Voo</label>
+                <input type="text" id="codigoVoo" placeholder="Ex: G3-100" autocomplete="off">
+            </div>
+
+            <div class="campo">
+                <label for="origemVoo">Cidade de Origem</label>
+                <input type="text" id="origemVoo" placeholder="Ex: São Paulo" autocomplete="off">
+            </div>
+
+            <div class="campo">
+                <label for="destinoVoo">Cidade de Destino</label>
+                <input type="text" id="destinoVoo" placeholder="Ex: Curitiba" autocomplete="off">
+            </div>
+
+            <button type="button" id="btnRegistrar">Registrar Voo ✨</button>
+        </form>
+
+        <div class="area-mensagem">
+            <p id="avisoSistema" class="neutro">Aguardando dados para registro...</p>
+        </div>
+    </main>
+
+    <script type="module" src="painel.js"></script>
+</body>
+</html>
